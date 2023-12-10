@@ -1,9 +1,10 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import { Container } from "react-bootstrap";
 
 function Home({proyectos}){
     return(
-        <div className="container m-4">
+        <Container>
             <h1>Bienvenido al Perfil de Usuario</h1>
             <p>Estos son mis proyectos:</p>
             <div className="container mt-5 ">
@@ -17,7 +18,7 @@ function Home({proyectos}){
             }
             </div>
             </div>
-        </div>
+        </Container>
     );
 }
 
