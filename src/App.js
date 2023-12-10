@@ -10,6 +10,8 @@ import Header from './components/Header';
 import Hobbies from './components/Hobbies';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
+//datos
+import proyectos from './data/proyectos';
 
 function App() {
   return (
@@ -17,7 +19,7 @@ function App() {
       <div>
         <Header />
         <Routes>
-          <Route path="/" element={<Home/>} />
+          <Route path="/" element={<Home proyectos={proyectos}/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/hobbies" element={<Hobbies/>} />
           <Route path="/contact" element={<Contact/>} />
